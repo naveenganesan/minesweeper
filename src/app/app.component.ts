@@ -52,7 +52,7 @@ export class AppComponent  {
       this.matrix[i][j].position = this.totalMines;
       this.totalScore += 10;
     } else {
-      alert("You lost the game.. " + mines + " mine(s) in the current cell." );
+      alert(`You lost the game.. ${mines} mine(s) in the current cell.`);
       this.resetGame();
     }
   }
