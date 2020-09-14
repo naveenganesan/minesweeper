@@ -6,7 +6,7 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  matrixSize = 3;
+  matrixSize = 6;
   matrix = [];
   totalMines = 0;
   totalScore = 0;
