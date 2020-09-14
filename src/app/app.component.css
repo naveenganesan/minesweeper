@@ -1,0 +1,22 @@
+p {
+  font-family: Lato;
+}
+
+.start-btn-continer {
+  width: 100%;
+  margin: 10px;
+}
+
+.start-btn-continer, button {
+  float: right;
+}
+
+.matrix-cell {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.matrix-row { }

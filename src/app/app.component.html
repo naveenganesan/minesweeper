@@ -1,0 +1,18 @@
+<div class="start-btn-continer">
+  <button (click)="resetGame()">Start New Game</button>
+</div>
+<div class="matrix-container">
+  <table>
+    <tr class="matrix-row"  *ngFor="let m of matrix let i = index;">
+      <td class="matrix-cell" *ngFor="let n of m; let j = index;" (click)="getMineDetails(i, j, n.mines)">{{n.position}}</td>
+    </tr>
+  </table>
+  <div>
+    <p>Your total score is: {{totalScore}}</p>
+    <ul>
+      <li>If you click on a cell with mine, You Lose..!</li>
+      <li>If you click on a cell without a mine, the total number of mines in adjacent cells would be displayed.</li>
+      <li>After the first click, choose the cells wisely based on probablity to get the maximum score (each right cell gets you 10 points.)</li>
+    </ul>
+  </div>
+</div>
